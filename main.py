@@ -7,22 +7,17 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
+class MainPage(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/main.html')
+        self.response.write(template.render())
 
 class MapPage(webapp2.RequestHandler):
     def get(self):
         template = JINJA_ENVIRONMENT.get_template('templates/maps.html')
         self.response.write(template.render())
 
-class MainPage(webapp2.RequestHandler):
-    def get(self):
-        template = JINJA_ENVIRONMENT.get_template('templates/main.html')
-        self.response.write(template.render())
-
-
-
 app = webapp2.WSGIApplication([
     ('/', MainPage),
     ('/map', MapPage),
-
-
 ], debug=True)
