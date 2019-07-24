@@ -13,9 +13,10 @@ class MainPage(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('maps.html')
         self.response.write(template.render())
 
+class MapPage(webapp2.RequestHandler):
+    
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
-
-
+    ('/map', MapPage),
 ], debug=True)
