@@ -41,8 +41,8 @@ body {
 }
 
 #canvas{
-  height: 600px;
-  width: 750px;
+  height: 1000px;
+  width: 2000px;
   margin:auto;
   margin-top: 100px;
   position: relative;
@@ -51,6 +51,7 @@ body {
 /*Styling for the forms */
 .travel-details{
   font-family: 'Roboto', sans-serif;
+  font-size: 30px;
   width:80%;
   left:50%;
   color: white;
