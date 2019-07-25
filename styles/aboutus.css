@@ -23,6 +23,7 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
+  font-size: 30px
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -39,7 +40,7 @@ body {
 }
 h1{
   margin-top: 100px;
-  font-size: 50px;
+  font-size: 60px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color:white;
@@ -52,18 +53,22 @@ h1{
   font-family: 'Roboto', sans-serif;
   color:white;
   text-align: center;
+  font-size: 30px
 }
 .profile-pic{
   border-radius: 50%;
-  height:200px;
-  width:200px;
-   box-shadow: 0px 10px  10px rgba(89, 89, 89, 0.5);
+  height:350px;
+  width:350px;
+  box-shadow: 0px 10px  10px rgba(89, 89, 89, 0.5);
 }
 .us{
-  width:300px;
+  width:600px;
   display:flex;
   justify-content: center;
   flex-direction: column;
   text-align: justify;
   align-items: center;
+}
+.links:hover{
+  box-shadow: 10px 10px  10px rgba(170, 211, 223, 0.5);
 }
