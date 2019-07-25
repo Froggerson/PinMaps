@@ -17,7 +17,7 @@ handlers:
 #new handlers should go ABOVE the catch all url (.*)
 - url: .*
   script: main.app
-
+  login: required
 
 libraries:
 - name: webapp2
