@@ -37,3 +37,11 @@ li a:hover:not(.active) {
 body {
   background-color: #CF9BCB;
 }
+.creators{
+  display:flex;
+  justify-content: space-around;
+}
+
+.us{
+  width:100px;
+}

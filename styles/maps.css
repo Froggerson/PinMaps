@@ -49,6 +49,7 @@ body {
 
 /*Styling for the forms */
 .travel-details{
+  font-family: 'Roboto', sans-serif;
   width:80%;
   left:50%;
   color: white;
