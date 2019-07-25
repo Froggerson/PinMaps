@@ -42,27 +42,34 @@ body {
 
 #canvas{
   height: 1000px;
-  width: 2000px;
+  width: 100%;
   margin:auto;
   margin-top: 100px;
   position: relative;
 }
 
 /*Styling for the forms */
-.travel-details{
+form{
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
-  width:80%;
-  left:50%;
+  width:700px;
   color: white;
+  margin:auto;
+  padding-right: 50px;
+  padding-left: 50px;
 
 }
+input{
+  left:50%;
+}
 input[type=text] {
-  width: 80%;
+  width: 800px;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
   box-sizing: border-box;
   border-radius: 4px;
-  left:50%;
   color:gray;
 }
