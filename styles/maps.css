@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-ul {
+.navigation {
+  z-index: 5;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -34,7 +35,6 @@ li a:hover:not(.active) {
 }
 
 #canvas{
-  z-index: -1;
   height: 500px;
   width: 700px;
   margin:auto;
