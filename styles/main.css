@@ -23,6 +23,7 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
+  font-size: 30px
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -42,7 +43,7 @@ h1 {
   background-color: #AAD3DF;
   margin-top: 60px;
   color: white;
-  font-size: 30px;
+  font-size: 48px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -50,7 +51,15 @@ h2 {
   background-color: #AAD3DF;
   margin-top: 30px;
   color: white;
-  font-size: 20px;
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  background-color: #AAD3DF;
+  margin-top: 30px;
+  color: white;
+  font-size: 35px;
   font-family: 'Roboto', sans-serif;
 }
 
