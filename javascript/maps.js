@@ -27,7 +27,6 @@ map.on('click', function(e) {
 // }
 
 function saveData(latlng) {
-  console.log(latlng)
     fetch('/pin',{
       method: 'post',
       body: JSON.stringify(latlng)
