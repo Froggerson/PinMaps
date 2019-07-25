@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 .navigation {
-  z-index: 10;
+  z-index: 5;
   list-style-type: none;
   margin: 0;
   margin-bottom: 0px;
@@ -24,6 +24,7 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
+  font-size: 30px
 }
 
 /* Change the link color to #111 (black) on hover */
