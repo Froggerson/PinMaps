@@ -46,3 +46,16 @@ body {
   margin-top: 100px;
   position: relative;
 }
+
+/*Styling for the forms */
+.travel-details{
+
+}
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  left:50%;
+}
