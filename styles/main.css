@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: lightblue;
+  background-color: #AAD3DF;
   position: fixed;
   top: 0;
   width: 100%;
@@ -39,10 +39,18 @@ body {
 }
 
 h1 {
-  background-color: lightblue;
+  background-color: #AAD3DF;
   margin-top: 60px;
   color: white;
   font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  background-color: #AAD3DF;
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
 }
 
