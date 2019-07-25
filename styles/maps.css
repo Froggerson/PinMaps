@@ -51,6 +51,7 @@ body {
 .travel-details{
   width:80%;
   left:50%;
+  color: white;
 
 }
 input[type=text] {
@@ -60,4 +61,5 @@ input[type=text] {
   box-sizing: border-box;
   border-radius: 4px;
   left:50%;
+  color:gray;
 }
