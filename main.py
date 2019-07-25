@@ -21,16 +21,12 @@ class MapPage(webapp2.RequestHandler):
         current_user = users.get_current_user()
         user_pins = Pin.query().filter(Pin.user_id == current_user.user_id()).fetch()
         dict_for_template = {'user_pins': user_pins}
-        # for each_pin in user_pins:
-        #     pin_query_lat = each_pin["lat"]
-        #     pin_query_lng = each_pin["lng"]
-        #     L.marker([pin_query_lat, pin_query_lng], {icon:happyPin}).addTo(map);
         self.response.write(template.render(dict_for_template))
 
 class PinHandler(webapp2.RequestHandler):
     def post(self):
+        print(self.request.body)
         lat_lng = json.loads(self.request.body)
-        print(lat_lng)
         pin_lat = lat_lng["lat"]
         pin_long = lat_lng["lng"]
         pin_record = Pin(latitude = pin_lat, longitude = pin_long)
