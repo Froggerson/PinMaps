@@ -11,18 +11,13 @@ L.tileLayer(
 
 map.on('click', function(e) {
     L.marker(e.latlng, {draggable: true, markerId: 9999}).addTo(map);
+    saveData(e.latlng);
 });
-
-map.on('mouseup', function(e) {
-    saveData();
-})
 
 // Load data from the server if it already exists.
 
-loadData();
 
-
-// Library methods
+// Library methodss
 
 // function loadData(allMarkers) {
 //     for each(marker in allMarkers) {
@@ -31,11 +26,12 @@ loadData();
 //     // TODO: Load all markers from the server.
 // }
 
-function saveData() {
-    var allMarkers = getAllMarkers();
-
-    console.log(allMarkers);
-    // TODO: Call some web method to save the markers.
+function saveData(latlng) {
+  console.log(latlng)
+    fetch('/pin',{
+      method: 'post',
+      body: JSON.stringify(latlng)
+    });
 }
 
 function getAllMarkers() {
