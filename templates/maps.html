@@ -23,6 +23,11 @@
    <script
        src="/javascript/maps.js">
    </script>
+   {% for pin in user_pins %}
+   <script>
+   L.marker([{{pin.latitude}}, {{pin.longitude}}], {draggable: true, markerId: 9999}).addTo(map);
+   </script>
+   {% endfor %}
    </div>
    <div class="travel-details">
      <form method=POST action="/map">
