@@ -20,13 +20,8 @@ var happyPin = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 // Attach events.
-
 map.on('click', function(e) {
-    L.marker(e.latlng, {draggable: true, markerId: 9999}).addTo(map);
     L.marker(e.latlng, {draggable: true, markerId: 9999, icon: happyPin}).addTo(map);
-
-map.on('click', function(e) {
-    L.marker(e.latlng, {draggable: true, markerId: 9999}).addTo(map);
     saveData(e.latlng);
 });
 
