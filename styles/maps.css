@@ -49,6 +49,8 @@ body {
 
 /*Styling for the forms */
 .travel-details{
+  width:80%;
+  left:50%;
 
 }
 input[type=text] {
