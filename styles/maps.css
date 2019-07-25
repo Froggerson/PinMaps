@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #AAD3DF;
   position: fixed;
   top: 0;
   width: 100%;
@@ -20,18 +20,22 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px 15px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #CF9BCB;
 }
 
 .active {
   background-color: #4CAF50;
+}
+
+body {
+  background-color: #CF9BCB;
 }
 
 #canvas{

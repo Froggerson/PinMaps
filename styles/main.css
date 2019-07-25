@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: lightblue;
   position: fixed;
   top: 0;
   width: 100%;
@@ -27,16 +27,23 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #CF9BCB;
 }
 
 .active {
   background-color: #4CAF50;
 }
+
+body {
+  background-color: #CF9BCB;
+}
+
 h1 {
+  background-color: lightblue;
   margin-top: 60px;
-  color: blue;
+  color: white;
   font-size: 30px;
+  font-family: 'Roboto', sans-serif;
 }
 
 section {

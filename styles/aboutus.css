@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #AAD3DF;
   position: fixed;
   top: 0;
   width: 100%;
@@ -27,9 +27,13 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #CF9BCB;
 }
 
 .active {
   background-color: #4CAF50;
+}
+
+body {
+  background-color: #CF9BCB;
 }
