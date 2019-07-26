@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Google+Sans&display=swap");
+
+
+.navigation{
+  z-index: 5000;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #AAD3DF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: "Google Sans"
+}
+
+h1 {
+  font-family: "Google Sans"
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px
+}
+
+body {
+  background-color: #CF9BCB;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}

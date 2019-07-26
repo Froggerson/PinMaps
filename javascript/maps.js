@@ -1,4 +1,4 @@
-var map = L.map('canvas').setView([38.907192, -77.036873], 3);
+var map = L.map('canvas').setView([30.907192, 03], 3);
 mapLink =
     '<a href="http://openstreetmap.org">OpenStreetMap</a>';
 L.tileLayer(
@@ -25,6 +25,10 @@ map.on('click', function(e) {
     });
 });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 702b765bf5c1e39717826c12ed7aced6e9f6251c
 function saveData(latlng) {
     fetch('/pin',{
       method: 'post',
