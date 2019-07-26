@@ -1,30 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
-.navigation {
-  z-index: 5;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #AAD3DF;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px
-}
 
 /* Change the link color to #111 (black) on hover */
 li a:hover:not(.active) {
@@ -35,14 +8,9 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
-body {
-  background-color: #CF9BCB;
-  margin: 0;
-}
 .header {
   padding: 60px;
   text-align: center;
-  background: #1abc9c;
   color: white;
   font-size: 30px;
   width:100%;
@@ -52,25 +20,25 @@ h1{
   margin-top: 100px;
   font-size: 60px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
   color:white;
-
 }
+
 .creators{
   align-items: flex-start;
   display:flex;
   justify-content: space-around;
-  font-family: 'Roboto', sans-serif;
   color:white;
   text-align: center;
   font-size: 30px
 }
+
 .profile-pic{
   border-radius: 50%;
   height:350px;
   width:350px;
   box-shadow: 0px 10px  10px rgba(89, 89, 89, 0.5);
 }
+
 .us{
   width:600px;
   display:flex;
@@ -79,6 +47,7 @@ h1{
   text-align: justify;
   align-items: center;
 }
+
 .links:hover{
   box-shadow: 10px 10px  10px rgba(170, 211, 223, 0.5);
 }

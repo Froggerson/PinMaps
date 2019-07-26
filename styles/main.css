@@ -1,30 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
-.navigation {
-  z-index: 5;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #AAD3DF;
-  position: sticky;
-  top: 0;
-  width: 100%;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px
-}
 
 /* Change the link color to #111 (black) on hover */
 li a:hover:not(.active) {
@@ -35,37 +8,28 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
-body {
-  background-color: #CF9BCB;
-  margin: 0px
-}
-
 h1 {
   margin-top: 60px;
   color: white;
   font-size: 48px;
-  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
   margin-top: 30px;
   color: white;
   font-size: 35px;
-  font-family: 'Roboto', sans-serif;
 }
 
 h3 {
   margin-top: 30px;
   color: white;
   font-size: 35px;
-  font-family: 'Roboto', sans-serif;
 }
 
 ul {
   margin-top: 30px;
   color: white;
   font-size: 35px;
-  font-family: 'Roboto', sans-serif;
 }
 section {
    display: flex;

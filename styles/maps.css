@@ -1,31 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
-.navigation {
-  z-index: 5;
-  list-style-type: none;
-  margin: 0;
-  margin-bottom: 0px;
-  padding: 0;
-  overflow: hidden;
-  background-color: #AAD3DF;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px
-}
 
 /* Change the link color to #111 (black) on hover */
 li a:hover:not(.active) {
@@ -36,22 +8,18 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
-body {
-  background-color: #CF9BCB;
-  margin: 0;
-}
-
 #canvas{
   height: 1200px;
   width: 70%;
   margin:auto;
   margin-top: 100px;
   position: relative;
+  border-radius: 4px;
 }
 
 /*Styling for the forms */
-form{
-  font-family: 'Roboto', sans-serif;
+form {
+
   font-size: 30px;
   width:700px;
   color: white;
@@ -60,7 +28,7 @@ form{
   padding-left: 50px;
 
 }
-input{
+input {
   left:50%;
 }
 input[type=text] {
