@@ -17,12 +17,29 @@ var happyPin = L.icon({
 });
 // EVENTS
 map.on('click', function(e) {
-    L.marker(e.latlng, {draggable: true, markerId: 9999, icon:happyPin}).addTo(map);
+    var marker = L.marker(e.latlng, {draggable: true, markerId: 9999, icon:happyPin}).addTo(map);
     saveData(e.latlng);
+    marker.on('click', function(e) {
+      map.removeLayer(marker);
+      deletePin(e.latlng)
+    });
 });
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 702b765bf5c1e39717826c12ed7aced6e9f6251c
 function saveData(latlng) {
     fetch('/pin',{
       method: 'post',
       body: JSON.stringify(latlng)
     });
 }
+
+function deletePin(latlng) {
+  fetch('/pin',{
+    method: 'delete',
+    body: JSON.stringify(latlng)
+  });
+}
+//whenever we delete a pin, it goes to the pinhandler (delete) thingy and has an errorr

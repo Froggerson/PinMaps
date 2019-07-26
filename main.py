@@ -32,7 +32,8 @@ class PinHandler(webapp2.RequestHandler):
         pin_record = Pin(latitude = pin_lat, longitude = pin_long)
         pin_record.user_id = users.get_current_user().user_id()
         pin_record.put()
-
+    def delete(self):
+        print("deleting***************************************")
 
 class AboutPage(webapp2.RequestHandler):
      def get(self):
