@@ -1,4 +1,4 @@
-var map = L.map('canvas').setView([30.907192, 03], 3);
+var map = L.map('canvas').setView([30.907192, 03], 2);
 mapLink =
     '<a href="http://openstreetmap.org">OpenStreetMap</a>';
 L.tileLayer(
