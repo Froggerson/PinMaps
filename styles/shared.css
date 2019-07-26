@@ -64,6 +64,7 @@ body {
   color:white;
 }
 .container{
+  animation: fadeIn 1.5s .5s;
   position: absolute;
   top: 50%;
   transition: translate(-50% -50%);
@@ -72,19 +73,22 @@ body {
   font-weight: 700;
 }
 .container h1 span{
-  animation: fadeIn 1.5s .5s/*, glowing 1.5 .5s infinite reverse*/;
+
   border:10px solid white;
   padding: 6px 14px;
   display:inline-block;
+  box-shadow:
+          inset 60px 0 120px #f0f,  /* left magenta */
+          inset -60px 0 120px #0ff; /* right cyan */
 }
 .container h1{
   font-size: 72px;
   letter-spacing: 0.2em;
   margin:0;
   color:white;
-  box-shadow:
-          inset 60px 0 120px #f0f,  /* left magenta */
-          inset -60px 0 120px #0ff; /* right cyan */
+  }
+.container p{
+    font-size: 30px;
   }
 @keyframes fadeIn {
   0% {
@@ -96,10 +100,4 @@ body {
   100% {
     opacity:1;
   }
-}
-@keyframes glowing {
-  0% { text-shadow: 0 0 -10px #c4a300; }
-  40% { text-shadow: 0 0 20px #c4a300; }
-  60% { text-shadow: 0 0 20px #c4a300; }
-  100% { text-shadow: 0 0 -10px #c4a300; }
 }

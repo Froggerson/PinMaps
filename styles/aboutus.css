@@ -5,7 +5,7 @@ body{
   color:#5c5c5c;
 }
 .container{
-    right:25%;
+  left:18%;
 }
 .explanation{
   background-color: #AAD3DF;
@@ -28,11 +28,6 @@ body{
   text-decoration: underline;
   font-size: 60px;
   color: white;
-}
-#google-la{
-  float:right;
-  width:800px;
-  height:600px;
 }
 #team{
   color:#153243;
