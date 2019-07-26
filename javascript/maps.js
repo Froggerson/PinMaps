@@ -21,7 +21,7 @@ function saveData(latlng) {
     });
 }
 
-map.on('mouseup', function(e) {
+map.on('onmousemove', function(e) {
   if (Pin.distance > 0) {
     saveData(e.latlng);
   }
