@@ -32,6 +32,13 @@ li a {
   text-decoration: none;
   font-size: 30px
 }
+li a:hover:not(.active) {
+  background-color: #CF9BCB;
+}
+
+.active {
+  background-color: #4CAF50;
+}
 
 body {
   background-color: #CF9BCB;

@@ -1,11 +1,9 @@
 
 /* Change the link color to #111 (black) on hover */
-li a:hover:not(.active) {
-  background-color: #CF9BCB;
-}
-
-.active {
-  background-color: #4CAF50;
+body{
+  background-color:#f7f7f7;
+  font-size: 30px;
+  color:#5c5c5c;
 }
 .header {
   position: relative;
@@ -15,6 +13,8 @@ li a:hover:not(.active) {
   repeat:no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0px 15px  30px rgba(62, 77, 82, 0.5);
+  color:white;
 }
 .container{
   position: absolute;
@@ -36,30 +36,32 @@ li a:hover:not(.active) {
   margin:0;
   color:white;
 }
-
-/*END OF HERO IMAGE CSS*/
-/* h1{
-  margin-top: 100px;
-  font-size: 60px;
-  text-align: center;
-  color:white;
-} */
-
+.explanation{
+  display:flex;
+  justify-content: space-between;
+}
+.explanation-text{
+  display:flex;
+  justify-content: space-between;
+}
+#google-la{
+  float:right;
+  width:600px;
+  height:450px;
+}
 .creators{
   margin-top:100px;
   align-items: flex-start;
   display:flex;
   justify-content: space-around;
-  color:white;
   text-align: center;
-  font-size: 30px
 }
 
 .profile-pic{
   border-radius: 50%;
   height:350px;
   width:350px;
-  box-shadow: 0px 10px  10px rgba(89, 89, 89, 0.5);
+  box-shadow: 0px 0px  20px rgba(62, 77, 82, 0.5);
 }
 
 .us{
@@ -72,5 +74,5 @@ li a:hover:not(.active) {
 }
 
 .links:hover{
-  box-shadow: 10px 10px  10px rgba(170, 211, 223, 0.5);
+  box-shadow: 0px 0px  40px rgba(81, 169, 201, 0.5);
 }
