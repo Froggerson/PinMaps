@@ -7,6 +7,7 @@ L.tileLayer(
     maxZoom: 18,
     }).addTo(map);
 
+var
 // Attach events.
 
 map.on('click', function(e) {
@@ -20,12 +21,6 @@ function saveData(latlng) {
       body: JSON.stringify(latlng)
     });
 }
-
-map.on('onmousemove', function(e) {
-  if (Pin.distance > 0) {
-    saveData(e.latlng);
-  }
-});
 
 // function getAllMarkers() {
 //       var allMarkers = [];
