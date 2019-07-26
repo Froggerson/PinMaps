@@ -34,7 +34,10 @@ body{
   letter-spacing: 0.2em;
   margin:0;
   color:white;
-}
+  box-shadow:
+          inset 60px 0 120px #f0f,  /* left magenta */
+          inset -60px 0 120px #0ff; /* right cyan */
+  }
 .explanation{
   background-color: #AAD3DF;
   display:flex;
