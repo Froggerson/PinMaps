@@ -36,11 +36,12 @@ body{
   color:white;
 }
 .explanation{
-  background-color: #f2f5f5;
+  background-color: #AAD3DF;
   display:flex;
   justify-content: space-between;
   line-height: 200%;
   box-shadow: 0px 15px  30px rgba(62, 77, 82, 0.5);
+  color: white;
 }
 .explanation-text{
   text-align: justify;
@@ -48,11 +49,13 @@ body{
   align-items: center;
   flex-direction: column;
   margin:25px 180px;
+  color: white;
 }
 .explanation-text h2{
   color:#153243;
   text-decoration: underline;
   font-size: 60px;
+  color: white;
 }
 #google-la{
   float:right;
@@ -64,6 +67,7 @@ body{
   text-decoration: underline;
   font-size: 60px;
   text-align:center;
+  color: white;
 }
 .creators{
   margin-top:100px;
@@ -71,6 +75,7 @@ body{
   display:flex;
   justify-content: space-around;
   text-align: center;
+  color: white;
 }
 
 .profile-pic{
@@ -87,6 +92,7 @@ body{
   flex-direction: column;
   text-align: justify;
   align-items: center;
+  color: white;
 }
 
 .links:hover{
