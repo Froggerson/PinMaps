@@ -14,5 +14,13 @@
       <li><a href="/memories">Memories</a></li>
       <li><a href="/aboutus">About Us</a></li>
     </ul>
+    <li>
+    {% for entry in journal_display %}
+      <h1>{{entry.entry_location}} </h1>
+      <h2>{{entry.entry_date}} </h2>
+      <h3>{{entry.entry_details}} </h3>
+      <h4>{{entry.entry_links}} </h4>
+    {% endfor %}
+  </li>
   </body>
 </html>

@@ -4,7 +4,8 @@ import jinja2
 import json
 import logging
 from google.appengine.api import users
-from models import Pin
+from models import Pin, Entry
+
 
 JINJA_ENVIRONMENT = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
@@ -53,12 +54,25 @@ class EntryHandler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('templates/entries.html')
         self.response.write(template.render())
 
-    # def post(self):
-        
+    def post(self):
+        current_user = users.get_current_user()
+        location = self.request.get('user-location')
+        date = self.request.get('user-date')
+        details = self.request.get('user-details')
+        links = self.request.get('user-links')
+        journal_entry = Entry(entry_location = location, entry_date = date, entry_details = details, entry_links = links)
+        journal_entry.user_id = current_user.user_id()
+        journal_entry.put()
+        self.redirect('/memories')
+
 class MemoryPage(webapp2.RequestHandler):
     def get(self):
         template = JINJA_ENVIRONMENT.get_template('templates/memories.html')
-        self.response.write(template.render())
+        current_user = users.get_current_user()
+        user_entries = Entry.query().filter(Entry.user_id == current_user.user_id()).fetch()
+        logging.info(user_entries)
+        journal_dict = {'journal_display': user_entries}
+        self.response.write(template.render(journal_dict))
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),

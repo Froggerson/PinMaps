@@ -6,7 +6,7 @@ class Pin(ndb.Model):
     user_id = ndb.StringProperty()
 
 class Entry(ndb.Model):
-     user_location = ndb.StringProperty(required = True)
+     entry_location = ndb.StringProperty(required = True)
      entry_date = ndb.StringProperty(required = True)
      entry_details = ndb.StringProperty(required = True)
      entry_links = ndb.StringProperty(required = True)
