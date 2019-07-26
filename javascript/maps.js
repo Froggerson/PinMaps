@@ -21,8 +21,7 @@ map.on('click', function(e) {
     var marker = L.marker(e.latlng, {draggable: true, markerId: 9999, icon:happyPin}).addTo(map);
     saveData(e.latlng);
     marker.on('click', function(e) {
-      map.removeLayer(marker);
-      print(e)
+      map.removeLayer(marker)
       deletePin(e.latlng)
     });
 });

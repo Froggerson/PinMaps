@@ -25,7 +25,6 @@ class MapPage(webapp2.RequestHandler):
 
 class PinHandler(webapp2.RequestHandler):
     def post(self):
-        print(self.request.body)
         lat_lng = json.loads(self.request.body)
         pin_lat = lat_lng["lat"]
         pin_long = lat_lng["lng"]
