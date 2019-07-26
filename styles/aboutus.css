@@ -4,36 +4,8 @@ body{
   font-size: 30px;
   color:#5c5c5c;
 }
-.header {
-  position: relative;
-  height:800px;
-  overflow: hidden;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.carrentals.com/blog/wp-content/uploads/2018/05/CR-push-pin-map-styled-6-1.jpg");
-  repeat:no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0px 15px  30px rgba(62, 77, 82, 0.5);
-  color:white;
-}
 .container{
-  position: absolute;
-  top: 50%;
-  right:25%;
-  transition: translate(-50% -50%);
-  overflow: hidden;
-  text-align: center;
-  font-weight: 700;
-}
-.container h1 span{
-  border:10px solid white;
-  padding: 6px 14px;
-  display:inline-block;
-}
-.container h1{
-  font-size: 72px;
-  letter-spacing: 0.2em;
-  margin:0;
-  color:white;
+  left:18%;
 }
 .explanation{
   background-color: #AAD3DF;
@@ -54,18 +26,13 @@ body{
 .explanation-text h2{
   color:#153243;
   text-decoration: underline;
-  font-size: 60px;
+  font-size: 40px;
   color: white;
-}
-#google-la{
-  float:right;
-  width:800px;
-  height:600px;
 }
 #team{
   color:#153243;
   text-decoration: underline;
-  font-size: 60px;
+  font-size: 40px;
   text-align:center;
   color: white;
 }
@@ -80,13 +47,14 @@ body{
 
 .profile-pic{
   border-radius: 50%;
-  height:350px;
-  width:300px;
+  height:200px;
+  width:200px;
   box-shadow: 0px 0px  20px rgba(62, 77, 82, 0.5);
 }
 
 .us{
-  width:550px;
+  width:250px;
+  font-size: 20px;
   display:flex;
   justify-content: center;
   flex-direction: column;
