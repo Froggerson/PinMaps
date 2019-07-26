@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Memories</title>
     <link rel="stylesheet" href="styles/shared.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/memories.css">
   </head>
   <body>
     <ul class="navigation">
@@ -14,12 +14,15 @@
       <li><a href="/memories">Memories</a></li>
       <li><a href="/aboutus">About Us</a></li>
     </ul>
-    <li>
+    <h1>Welcome to your memories...</h1>
+    <li class="memories">
     {% for entry in journal_display %}
-      <h1>{{entry.entry_location}} </h1>
-      <h2>{{entry.entry_date}} </h2>
-      <h3>{{entry.entry_details}} </h3>
-      <h4>{{entry.entry_links}} </h4>
+      <div class="memory">
+        <p class="location">{{entry.entry_location}} </p>
+        <p class="date">{{entry.entry_date}} </p>
+        <p class="entry">{{entry.entry_details}} </p>
+        <a class="link"href={{entry.entry_links}}>More pictures/info about the trip!</a>
+    </div>
     {% endfor %}
   </li>
   </body>

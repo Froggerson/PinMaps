@@ -64,7 +64,7 @@ body {
   color:white;
 }
 .container{
-  animation: fadeIn 1.5s .5s;
+  animation: fadeIn 1.5s;
   position: absolute;
   top: 50%;
   transition: translate(-50% -50%);
