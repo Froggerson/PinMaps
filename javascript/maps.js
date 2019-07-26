@@ -17,7 +17,7 @@ var happyPin = L.icon({
 });
 
 function addPin(latlng) {
-  var marker = L.marker(latlng, {draggable: false, markerId: 9999, icon:happyPin}).addTo(map);
+  var marker = L.marker(latlng, {draggable: true, markerId: 9999, icon:happyPin}).addTo(map);
   marker.on('click', function(e) {
     if (e.originalEvent.shiftKey) {
       if (confirm("delete this pin?")) {
