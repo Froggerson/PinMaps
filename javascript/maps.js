@@ -15,12 +15,14 @@ var happyPin = L.icon({
     shadowAnchor: [4, 62],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
+
 // EVENTS
 map.on('click', function(e) {
     var marker = L.marker(e.latlng, {draggable: true, markerId: 9999, icon:happyPin}).addTo(map);
     saveData(e.latlng);
     marker.on('click', function(e) {
       map.removeLayer(marker);
+      print(e)
       deletePin(e.latlng)
     });
 });

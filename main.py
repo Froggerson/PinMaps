@@ -33,7 +33,7 @@ class PinHandler(webapp2.RequestHandler):
         pin_record.user_id = users.get_current_user().user_id()
         pin_record.put()
     def delete(self):
-        print("deleting***************************************")
+        map.removeLayer(self)
 
 class AboutPage(webapp2.RequestHandler):
      def get(self):
