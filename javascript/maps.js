@@ -21,7 +21,7 @@ map.on('click', function(e) {
     var marker = L.marker(e.latlng, {draggable: true, markerId: 9999, icon:happyPin}).addTo(map);
     saveData(e.latlng);
     marker.on('click', function(e) {
-      map.removeLayer(marker)
+      map.removeLayer(marker);
       deletePin(e.latlng)
     });
 });
@@ -34,8 +34,8 @@ function saveData(latlng) {
 }
 
 function deletePin(latlng) {
-  fetch('/pin',{
-    method: 'delete',
+  fetch('/deletepin',{
+    method: 'post',
     body: JSON.stringify(latlng)
   });
 }

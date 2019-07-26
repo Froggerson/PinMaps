@@ -2,6 +2,7 @@ import webapp2
 import os
 import jinja2
 import json
+import logging
 from google.appengine.api import users
 from models import Pin
 
@@ -26,13 +27,21 @@ class MapPage(webapp2.RequestHandler):
 class PinHandler(webapp2.RequestHandler):
     def post(self):
         lat_lng = json.loads(self.request.body)
-        pin_lat = lat_lng["lat"]
-        pin_long = lat_lng["lng"]
+        pin_lat = round(lat_lng["lat"], 4)
+        pin_long = round(lat_lng["lng"], 4)
         pin_record = Pin(latitude = pin_lat, longitude = pin_long)
         pin_record.user_id = users.get_current_user().user_id()
         pin_record.put()
-    def delete(self):
-        map.removeLayer(self)
+
+class PinDeleteHandler(webapp2.RequestHandler):
+    def post(self):
+        lat_lng = json.loads(self.request.body)
+        current_user = users.get_current_user()
+        pin_lat = round(lat_lng["lat"], 4)
+        pin_long = round(lat_lng["lng"], 4)
+        deleted_pin = Pin.query().filter(Pin.user_id == current_user.user_id()).filter(Pin.latitude == pin_lat).filter(Pin.longitude == pin_long).get()
+        if deleted_pin is not None:
+            deleted_pin.key.delete()
 
 class AboutPage(webapp2.RequestHandler):
      def get(self):
@@ -55,5 +64,6 @@ app = webapp2.WSGIApplication([
     ('/aboutus', AboutPage),
     ('/entries', EntryPage),
     ('/pin', PinHandler),
-    ('/memories', MemoryPage)
+    ('/deletepin', PinDeleteHandler),
+    ('/memories', MemoryPage),
 ], debug=True)
