@@ -26,7 +26,6 @@
    <script
        src="/javascript/maps.js">
    </script>
-   {% for pin in user_pins %}
    <script>
    var happyPin = L.icon({
        iconUrl: "https://image.flaticon.com/icons/svg/1559/1559161.svg",
@@ -38,13 +37,11 @@
        shadowAnchor: [4, 62],  // the same for the shadow
        popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
    });
-   var marker{{loop.index0}} = L.marker([{{pin.latitude}}, {{pin.longitude}}], {draggable: false, markerId: 9999,icon: happyPin}).addTo(map);
-   marker{{loop.index0}}.on('click', function(e) {
-     map.removeLayer(marker{{loop.index0}});
-     deletePin(e.latlng)
-   });
-   </script>
+
+   {% for pin in user_pins %}
+   addPin(L.latLng({{pin.latitude}}, {{pin.longitude}}), "{{pin.key.urlsafe()}}");
    {% endfor %}
+   </script>
    </div>
 </body>
 </html>

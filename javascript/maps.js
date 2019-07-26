@@ -16,14 +16,21 @@ var happyPin = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
+function addPin(latlng) {
+  var marker = L.marker(latlng, {draggable: false, markerId: 9999, icon:happyPin}).addTo(map);
+  marker.on('click', function(e) {
+    if (e.originalEvent.shiftKey) {
+      if (confirm("delete this pin?")) {
+        map.removeLayer(marker);
+        deletePin(latlng);
+      }
+    }
+  });
+}
 // EVENTS
 map.on('click', function(e) {
-    var marker = L.marker(e.latlng, {draggable: false, markerId: 9999, icon:happyPin}).addTo(map);
     saveData(e.latlng);
-    marker.on('click', function(e) {
-      map.removeLayer(marker);
-      deletePin(e.latlng)
-    });
+    addPin(e.latlng);
 });
 
 function saveData(latlng) {
