@@ -39,12 +39,10 @@ class AboutPage(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('templates/aboutus.html')
         self.response.write(template.render())
 
-
 class EntryPage(webapp2.RequestHandler):
     def get(self):
         template = JINJA_ENVIRONMENT.get_template('templates/entries.html')
         self.response.write(template.render())
-
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
