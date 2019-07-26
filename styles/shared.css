@@ -16,6 +16,13 @@
   font-family: "Google Sans"
 }
 
+li a:hover:not(.active) {
+  background-color: #CF9BCB;
+}
+
+.active {
+  background-color: #4CAF50;
+}
 h1 {
   font-family: "Google Sans"
 }
