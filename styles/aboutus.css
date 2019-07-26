@@ -25,6 +25,7 @@ body{
   font-weight: 700;
 }
 .container h1 span{
+  animation: fadeIn 1.5s .5s/*, glowing 1.5 .5s infinite reverse*/;
   border:10px solid white;
   padding: 6px 14px;
   display:inline-block;
@@ -100,4 +101,21 @@ body{
 
 .links:hover{
   box-shadow: 0px 0px  40px rgba(81, 169, 201, 0.5);
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .55;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@keyframes glowing {
+  0% { text-shadow: 0 0 -10px #c4a300; }
+  40% { text-shadow: 0 0 20px #c4a300; }
+  60% { text-shadow: 0 0 20px #c4a300; }
+  100% { text-shadow: 0 0 -10px #c4a300; }
 }
