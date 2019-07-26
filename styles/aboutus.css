@@ -1,7 +1,6 @@
 
 /* Change the link color to #111 (black) on hover */
 body{
-  background-color:#f7f7f7;
   font-size: 30px;
   color:#5c5c5c;
 }
@@ -37,17 +36,34 @@ body{
   color:white;
 }
 .explanation{
+  background-color: #f2f5f5;
   display:flex;
   justify-content: space-between;
+  line-height: 200%;
+  box-shadow: 0px 15px  30px rgba(62, 77, 82, 0.5);
 }
 .explanation-text{
-  display:flex;
-  justify-content: space-between;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin:25px 180px;
+}
+.explanation-text h2{
+  color:#153243;
+  text-decoration: underline;
+  font-size: 60px;
 }
 #google-la{
   float:right;
-  width:600px;
-  height:450px;
+  width:800px;
+  height:600px;
+}
+#team{
+  color:#153243;
+  text-decoration: underline;
+  font-size: 60px;
+  text-align:center;
 }
 .creators{
   margin-top:100px;
