@@ -25,10 +25,6 @@ map.on('click', function(e) {
     });
 });
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 702b765bf5c1e39717826c12ed7aced6e9f6251c
 function saveData(latlng) {
     fetch('/pin',{
       method: 'post',
