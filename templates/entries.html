@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Entries</title>
+    <link rel="stylesheet" href="styles/entries.css">
+  </head>
+  <body>
+    <ul class="navigation">
+      <li><a href="/">Home</a></li>
+      <li><a href="/map">Map</a></li>
+      <li><a href="/entries">Entries</a></li>
+      <li><a href="/aboutus">About Us</a></li>
+    </ul>
+  </head>
+  <body>
+  <form method=POST action="/map">
+    <h1>Tell us about your trip!</h1>
+    <p>Location:</p>
+    <input type="text" name="user-location" value="City, State/Country">
+    <br><p>Date:</p>
+    <input type="text" name="user-date" value="Start date- End Date">
+    <br><p>Details:</p>
+    <input type="text" name="user-details" value="Journal entry">
+    <br><p>Media Links:</p>
+    <input type="text" name="user-links" value=" Outside link to images and/or videos and social media">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  </body>
+</html>

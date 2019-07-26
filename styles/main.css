@@ -7,7 +7,7 @@
   padding: 0;
   overflow: hidden;
   background-color: #AAD3DF;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -37,6 +37,7 @@ li a:hover:not(.active) {
 
 body {
   background-color: #CF9BCB;
+  margin: 0px
 }
 
 h1 {

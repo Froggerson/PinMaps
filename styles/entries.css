@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
 .navigation {
   z-index: 5;
   list-style-type: none;
@@ -26,30 +24,14 @@ li a {
   font-family: 'Roboto', sans-serif;
   font-size: 30px
 }
-
-/* Change the link color to #111 (black) on hover */
-li a:hover:not(.active) {
-  background-color: #CF9BCB;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-
 body {
   background-color: #CF9BCB;
   margin: 0;
 }
 
-#canvas{
-  height: 1200px;
-  width: 70%;
-  margin:auto;
-  margin-top: 100px;
-  position: relative;
+h1 {
+  margin-top: 100px
 }
-
-/*Styling for the forms */
 form{
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
