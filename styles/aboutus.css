@@ -7,23 +7,52 @@ li a:hover:not(.active) {
 .active {
   background-color: #4CAF50;
 }
-
 .header {
-  padding: 60px;
+  position: relative;
+  height:800px;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg");
+  repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  right:25%;
+  transition: translate(-50% -50%);
+  overflow: hidden;
   text-align: center;
-  color: white;
-  font-size: 30px;
-  width:100%;
+  font-weight: 700;
+}
+.container h1 span{
+  border:10px solid white;
+  padding: 6px 14px;
+  display:inline-block;
+}
+.container h1{
+  font-size: 72px;
+  letter-spacing: 0.2em;
+  margin:0;
+  color:white;
+}
+.container p{
+  font-size: 40px;
+  color:white;
+  margin-left: 20px;
+  display:block;
+  text-shadow: 0 0 10px block;
 }
 /*END OF HERO IMAGE CSS*/
-h1{
+/* h1{
   margin-top: 100px;
   font-size: 60px;
   text-align: center;
   color:white;
-}
+} */
 
 .creators{
+  margin-top:100px;
   align-items: flex-start;
   display:flex;
   justify-content: space-around;

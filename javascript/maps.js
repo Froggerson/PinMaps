@@ -20,6 +20,8 @@ map.on('click', function(e) {
     L.marker(e.latlng, {draggable: true, markerId: 9999, icon:happyPin}).addTo(map);
     saveData(e.latlng);
 });
+
+
 function saveData(latlng) {
     fetch('/pin',{
       method: 'post',
