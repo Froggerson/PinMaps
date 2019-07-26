@@ -39,6 +39,15 @@ body {
   background-color: #CF9BCB;
   margin: 0;
 }
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  width:100%;
+}
+/*END OF HERO IMAGE CSS*/
 h1{
   margin-top: 100px;
   font-size: 60px;
