@@ -48,11 +48,13 @@ class AboutPage(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('templates/aboutus.html')
         self.response.write(template.render())
 
-class EntryPage(webapp2.RequestHandler):
+class EntryHandler(webapp2.RequestHandler):
     def get(self):
         template = JINJA_ENVIRONMENT.get_template('templates/entries.html')
         self.response.write(template.render())
 
+    # def post(self):
+        
 class MemoryPage(webapp2.RequestHandler):
     def get(self):
         template = JINJA_ENVIRONMENT.get_template('templates/memories.html')
@@ -62,7 +64,7 @@ app = webapp2.WSGIApplication([
     ('/', MainPage),
     ('/map', MapPage),
     ('/aboutus', AboutPage),
-    ('/entries', EntryPage),
+    ('/entries', EntryHandler),
     ('/pin', PinHandler),
     ('/deletepin', PinDeleteHandler),
     ('/memories', MemoryPage),
