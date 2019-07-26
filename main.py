@@ -70,7 +70,6 @@ class MemoryPage(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('templates/memories.html')
         current_user = users.get_current_user()
         user_entries = Entry.query().filter(Entry.user_id == current_user.user_id()).fetch()
-        logging.info(user_entries)
         journal_dict = {'journal_display': user_entries}
         self.response.write(template.render(journal_dict))
 
