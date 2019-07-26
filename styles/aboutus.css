@@ -26,13 +26,13 @@ body{
 .explanation-text h2{
   color:#153243;
   text-decoration: underline;
-  font-size: 60px;
+  font-size: 40px;
   color: white;
 }
 #team{
   color:#153243;
   text-decoration: underline;
-  font-size: 60px;
+  font-size: 40px;
   text-align:center;
   color: white;
 }
@@ -47,13 +47,14 @@ body{
 
 .profile-pic{
   border-radius: 50%;
-  height:300px;
-  width:300px;
+  height:200px;
+  width:200px;
   box-shadow: 0px 0px  20px rgba(62, 77, 82, 0.5);
 }
 
 .us{
-  width:420px;
+  width:250px;
+  font-size: 20px;
   display:flex;
   justify-content: center;
   flex-direction: column;
