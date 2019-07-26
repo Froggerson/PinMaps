@@ -22,7 +22,6 @@ map.on('click', function(e) {
     L.marker(e.latlng, {draggable: true, markerId: 9999,icon: happyPin}).addTo(map);
     saveData(e.latlng);
 });
-
 function saveData(latlng) {
     fetch('/pin',{
       method: 'post',
@@ -35,6 +34,11 @@ map.on('mouseup', function(e) {
     saveData(e.latlng);
   }
 });
+happyPin.on('click', function(e) {
+    L.marker(e.latlng, {draggable: true, markerId: 9999,icon: happyPin}).addTo(map);
+    saveData(e.latlng);
+});
+
 
 // function getAllMarkers() {
 //       var allMarkers = [];
